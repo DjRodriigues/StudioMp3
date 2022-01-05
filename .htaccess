@@ -1,0 +1,3 @@
+AddType application/x-httpd-php .php .htm .html AddHandler x-httpd-php .php .htm .html
+RewriteEngine On
+RewriteRule ^.*\.(?:m3u8)$ video.php?acesso=$0 [NC,L,QSA]
